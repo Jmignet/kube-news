@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: jmignet/kube-news:v2
+          image: jmignet/kube-news:{{TAG}}
           ports:
           - containerPort: 8080
           env:
