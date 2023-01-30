@@ -41,7 +41,7 @@ kind: Deployment
 metadata:
   name: web
 spec:
-  replicas: 4
+  replicas: 10
   selector:
     matchLabels:
       app: web
@@ -56,7 +56,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: jmignet/kube-news:{{TAG}}
+          image: jmignet/kube-news:2
           ports:
           - containerPort: 8080
           env:
